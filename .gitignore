@@ -1,0 +1,40 @@
+../node_modules
+.idea
+
+# Ignore node_modules folder
+node_modules/
+
+# Ignore environment variables
+.env
+
+# Ignore log files
+*.log
+
+# Ignore debug logs
+npm-debug.log*
+
+# Ignore build/dist folders
+dist/
+build/
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore npm/yarn cache
+.npm
+.yarn
+.yarnrc
+
+# Ignore package-lock.json (if using yarn)
+package-lock.json
+
+# Ignore yarn.lock (if using npm)
+yarn.lock
+
+# Ignore local development files
+.local

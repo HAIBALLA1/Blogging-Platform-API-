@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "my_app",
+  "main": "server.js",
+  "scripts": {
+    "test": "strat"
+  },
+  "repository": {
+    "type": "git",
+    "url": "backend"
+  },
+  "keywords": [
+    "1234"
+  ],
+  "author": "Farouk",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
