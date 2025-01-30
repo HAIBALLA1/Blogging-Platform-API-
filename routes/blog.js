@@ -20,7 +20,7 @@ router.post( '/'  , async (req, res , next) => {
 
         res.status(201).json({'message': 'Blog post was saved'});
 
-    } catch (err) {
+    } catch (err) { const blog =
         res.status(500).json({'message': 'Blog post could not be created'});
     }
 
@@ -62,11 +62,23 @@ router.put('/:id', ( req , res ) => {
             if(!blog){
                 return res.status(404).json({'message': 'Blog not found'});
             }
-            res.satatus('200').json({"message" : "blog deleted !"})
+            res.status('200').json({"message" : "blog deleted !"})
         })
         .catch(err => {
             res.status(404).json({'message': 'Blog post could not be found '});
         })
+});
+
+router.get('/title/:title', async ( req , res ) => {
+     Blog.findOne({title : req.params.title})
+         .then((blog)=>{
+             res.status(200).json(blog);
+         })
+         .catch(err =>{
+             console.log(err);
+             res.status(404).json({'message': 'Blog post could not be found '});
+         })
+
 });
 
 
