@@ -1,14 +1,14 @@
 {
-  "name": "backend",
+  "name": "Blogging_Platform_API",
   "version": "1.0.0",
-  "description": "my_app",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "strat"
   },
   "repository": {
     "type": "git",
-    "url": "backend"
+    "url": "git@github.com:HAIBALLA1/Blogging-Platform-API-.git"
   },
   "keywords": [
     "1234"
@@ -16,6 +16,7 @@
   "author": "Farouk",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.21.2",
     "mongodb": "^6.12.0",
     "mongoose": "^8.9.5"
